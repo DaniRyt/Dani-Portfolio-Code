@@ -37,6 +37,13 @@ p {
 	padding: 15px 0 15px 0;
 }
 
+.first {
+	margin-left: 0;
+}
+.last {
+	margin-right: 0;
+}
+
 #web ul {
 	font-family: Avenir, sans-serif;
 }
@@ -47,11 +54,12 @@ p {
 
 nav {
 	background-color: #3E92C0;
-	padding: 20px 15px 15px 15px;
+	padding: 20px 0 15px 0;
 	position: absolute;
 	height: 100%;
 	width: 210px;
 }
+
 nav a {
 	color: white;
 	text-decoration: none;
@@ -82,7 +90,7 @@ nav .social-links {
 }
 
 nav .social-links a {
-	width: 30px;
+	width: 20px;
 	display: inline-block;
 }
 
@@ -119,6 +127,14 @@ nav .social-links a img {
 	box-shadow: -2px 0 5px rgba(0,0,0,0.5);
 }
 
+.menuOpen .left-nav a {
+	display: block;
+}
+
+.menuOpen .left-nav .call-to-action {
+	text-align: left;
+}
+
 
 /*END OF MOBILE MENU*/
 
@@ -134,9 +150,6 @@ section {
 	max-width: 1200px;
 }
 
-/*div.class {
-	clear: both;
-}*/
 
 #home {
 	width: 100%;
@@ -350,7 +363,7 @@ div.main-container {
 
 
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 550px){
 
 	.menuOpen {
 		width:auto;
@@ -369,6 +382,45 @@ div.main-container {
 	.menuOpen div.main-container{
 		left: 0px;
 		box-shadow: 0 0 0 rgba(0,0,0,0);
+	}
+
+	.left-nav {
+		float: left;
+		width: 50%;
+		font-size: 1.2em;
+		line-height: 1.5;
+		text-align: left;
+	/*	margin-bottom: 30px;*/
+	}
+	.right-nav {
+		float: right;
+		width: 45%;
+	}
+	.right-nav .call-to-action {
+		display: inline-block;
+		float: right;
+		margin-top: 0;
+		margin-bottom: 0;
+		clear: none;
+	}
+	.right-nav .social-links {
+		width: 55%;
+		text-align: right;
+		display: inline-block;
+		float: left;
+		margin-bottom: 0;
+	}
+	nav {
+		overflow: hidden;
+	}
+}
+
+@media all and (min-width: 700px) {
+	.right-nav .social-links {
+		width: 65%;
+	}
+	.right-nav .social-links a {
+		width: 30px;
 	}
 
 }
@@ -402,35 +454,6 @@ div.main-container {
 	#skills {
 		float: right;
 	}*/
-
-	.left-nav {
-		float: left;
-		width: 50%;
-		font-size: 1.2em;
-		line-height: 1.5;
-		text-align: left;
-	/*	margin-bottom: 30px;*/
-	}
-	.right-nav {
-		float: right;
-		width: 30%;
-	}
-	.right-nav .call-to-action {
-		display: inline-block;
-		float: right;
-		margin-top: 0;
-		margin-bottom: 0;
-		clear: none;
-	}
-	.right-nav .social-links {
-		width: 50%;
-		display: inline-block;
-		float: left;
-		margin-bottom: 0;
-	}
-	nav {
-		overflow: hidden;
-	}
 
 	.project .section-text {
 		max-width: 30%;

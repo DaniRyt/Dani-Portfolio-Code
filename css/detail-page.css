@@ -11,10 +11,92 @@ Primary style
 	box-sizing: border-box;
 }
 
-body {
+.main-container {
 	background-color: #e9f0f5;
 }
 
+
+header {
+	margin-bottom: 20px;
+}
+
+.project-details-stats ul li, .project-details-features ul li {
+	list-style-type: none;
+}
+
+.project-details-stats h4 {
+	text-align: left;
+}
+
+.project-details-stats p, .project-details-stats ul {
+	padding: 0 0 20px 0;
+}
+
+.stat {
+	max-width: 60%; /*remove later*/
+}
+
+@media all and (min-width: 700px) {
+	.stats-left, .stats-right {
+		width: 48%;
+		float: left;
+		overflow: hidden;
+		margin: 0 2%;
+	}
+
+	.stats-left {
+		margin-left: 0;
+	}
+	.stats-right {
+		margin-right: 0;
+	}
+
+	.stat {
+		float: left;
+		margin: 0 2%;
+	}
+
+	.stats-right .stat {
+		width: 46%;
+	}
+
+	.stats-left .stat {
+		width: 46%;
+		min-height: 100px;
+	}
+
+
+}
+
+
+
+
+
+
+/*NEXT SECTION*/
+
+@media all and (min-width: 700px) {
+	.project-details-about, .project-details-features, .project-details-image {
+		width: 26%;
+		float: left;
+		margin: 0 2%;
+	}
+
+	.project-details-about {
+		margin-left: 0;
+	}
+	.project-details-image {
+		margin-right: 0;
+	}
+
+	.project-details-image {
+		width: 40%;
+	}
+}
+
+.project-details-image img {
+	max-width: 100%;
+}
 
 /* -------------------------------- 
 
@@ -40,22 +122,20 @@ Main components
 
 -------------------------------- */
 header {
-	height: 100px;
-	line-height: 100px;
 	text-align: center;
-	background: #303e49;
+	/*background: #303e49;*/
+	/*color: white;*/
 }
 header h1 {
-	color: white;
-	font-size: 18px;
-	font-size: 1.125rem;
+	font-size: 26px;
+	padding-top: 20px;
 }
-@media only screen and (min-width: 1170px) {
+/*@media only screen and (min-width: 1170px) {
 	header h1 {
 		font-size: 24px;
 		font-size: 1.5rem;
 	}
-}
+}*/
 
 #cd-timeline {
 	position: relative;

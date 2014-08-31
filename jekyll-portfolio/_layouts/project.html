@@ -1,0 +1,99 @@
+---
+layout: default
+---
+
+<div class="mobileMenu">
+	<!-- MobileMenu -->
+	<a href="#menu" id="mobileMenuButton">Menu</a>
+</div>
+
+<header>
+	<h1 class="project-details-title">{{ page.project-title }}</h1>
+	<p class="project-details-subtitle">{{ page.project-type }}</p>
+</header>
+
+<section class="project-details-stats">
+	<div class="wrapper">
+		<div class="stats-left">
+			
+			<div class="stat">
+				<h4>Client</h4>
+				<p>{{ page.project-client }}</p>
+			</div>
+
+			<div class="stat">
+				<h4>Duration</h4>
+				<ul>
+					<li>{{ page.project-duration }}</li>
+				</ul>
+			</div>
+
+			<div class="stat">
+				<h4>Team</h4>
+				<ul>
+					{% for item in page.project-team-list %}
+						<li>{{ item }}</li>
+					{% endfor %}
+				</ul>
+			</div>
+
+			<div class="stat">
+				<h4>Brief</h4>
+				<p>{{ page.project-brief }}</p>
+			</div>
+
+		</div>
+		<div class="stats-right">
+			<div class="stat">
+				<h4>My Role</h4>
+				<ul>
+					{% for item in page.project-role %}
+						<li>{{ item }}</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="stat">
+				<h4>Tools</h4>
+				<ul>
+					{% for item in page.project-tools %}
+						<li>{{ item }}</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="project-details-body">
+	<div class="wrapper">
+		<div class="project-details-about">
+			<h3>The Project</h3>
+			<p>{{ page.project-the-project }}</p>
+		</div>
+		<div class="project-details-features">
+			<h4>Features</h4>
+			<ul>
+				{% for item in page.project-features %}
+					<li>{{ item }}</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="project-details-image">
+			<img src="{{ page.project-image }}">
+		</div>
+	</div>
+</section>
+
+
+<section class="project-details-timeline cd-container" id="cd-timeline">
+{{ content }}
+
+</section>
+
+
+
+
+
+
+

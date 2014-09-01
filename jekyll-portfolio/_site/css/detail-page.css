@@ -137,11 +137,15 @@ header h1 {
 	}
 }*/
 
+.cd-timeline-content img {
+	max-width: 100%;
+}
+
 #cd-timeline {
 	position: relative;
 	padding: 2em 0;
 	margin-top: 2em;
-	margin-bottom: 2em;
+	margin-bottom: 0;
 }
 #cd-timeline::before {
 	/* this is the vertical line */
@@ -193,10 +197,11 @@ header h1 {
 
 .cd-timeline-img {
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 40px;
-	height: 40px;
+	top: 20px;
+	left: 15px;
+	width: 10px;
+	height: 10px;
+	background: #3682AB;
 	border-radius: 50%;
 	box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
@@ -221,9 +226,9 @@ header h1 {
 }
 @media only screen and (min-width: 1170px) {
 	.cd-timeline-img {
-		width: 60px;
-		height: 60px;
-		left: 50%;
+		width: 10px;
+		height: 10px;
+		left: 52.3%;
 		margin-left: -30px;
 		/* Force Hardware Acceleration in WebKit */
 		-webkit-transform: translateZ(0);

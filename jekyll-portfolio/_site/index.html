@@ -5,12 +5,17 @@
 	<head>
 	<meta charset="UTF-8">
 	<title>Daniela Rytova Portfolio</title>
+	
 	<link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="//use.typekit.net/tui3drz.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	
+	<!-- <script type="text/javascript" src="//use.typekit.net/tui3drz.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
+	<link rel="stylesheet" href="/css/jquery.fancybox.css">
+
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="">
+
 </head>
 
 	<body>
@@ -18,10 +23,10 @@
 		<nav>
 	<div class="wrapper">
 		<div class="left-nav">
-			<a href="">Home</a>
+			<a href="/index.html">Home</a>
 <!--      <a href="">About me</a> -->
-			<a href="">Projects</a>
-			<a href="">Skills & Tools</a>
+			<a href="/index.html#projects">Projects</a>
+			<a href="/index.html#tools-n-skills">Skills & Tools</a>
 <!--      <a href="">Inspiration</a> -->
 			<!-- <a href="">Let's do this</a> -->
 		</div>
@@ -39,7 +44,7 @@
 				</a>
 			</div>
 			<div class="call-to-action">
-				<a href=""><button>Contact</button></a>
+				<a class="fancybox" href="#contact-form"><button>Contact</button></a>
 			</div>
 		</div>
 	</div>
@@ -72,11 +77,12 @@
 
 <section id="about">
 	<div class="wrapper">
-		<h2>About Me</h2>
+		
 		<div class="about-image">
 			<img src="assets/Aboutme.jpg" alt="Daniela" >
 		</div>
 		<div class="section-text">
+			<h2>About Me</h2>
 			<p>I am a Junior User Experience Designer with a background in Graphic Design. I have just completed a 10 week immersive user experience program with General Assembly. </p>
 		
 			<p>I am passionate about human psychology, technology and love to innovate and create. I am looking for a position that will allow me to develop my skills and give me a chance to contribute good user experiences in the digital world. </p>
@@ -85,7 +91,7 @@
 	</div>
 </section>
 
-<section class="project">
+<section class="project" id="projects">
 	<div class="wrapper">
 
 		<div class="project-image">
@@ -152,27 +158,7 @@
 	</div>
 </section>
 
-<section class="project flip">
-	<div class="wrapper">
-		
-		<div class="project-image">
-			<img src="http://placehold.it/350x350" alt="App">
-		</div>
-		<div class="section-text">
-			<h2>Company Name</h2>
-			<h3>Heuristic Analysis</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate</p>
-
-			<p><span class="project-topics">Topics:</span> User Research, Testing...</p>
-			<div class="call-to-action">
-				<a href=""><button>View Detail</button></a>
-			</div>
-		</div>
-		
-	</div>
-</section>
-
-<section class="tools-n-skills">
+<section class="tools-n-skills" id="tools-n-skills">
 	<div class="wrapper">
 		<div id="tools">
 			<img src="assets/Tools.svg" alt"Tools" >
@@ -205,10 +191,23 @@
 	</div>
 </section>
 
+<div id="contact-form-container" style="display: none;">
+	<form id="contact-form" action="http://getsimpleform.com/messages?form_api_token=231f0f82fb3979a952faad3065e7fa3c" method="post">
+		<!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+		<input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' />
+		<!-- all your input fields here.... -->
+		<input type='text' name='test' />
+		<input type='submit' value='Test form' />
+	</form>
+</div>
+
 
 		</div>
 
-		<script src="js/scripts.js"></script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/jquery.fancybox.js"></script>
+
+<script src="/assets/scripts.js"></script>
 
 	</body>
 

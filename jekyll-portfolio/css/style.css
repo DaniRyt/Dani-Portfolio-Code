@@ -37,6 +37,15 @@ p {
 	padding: 15px 0 15px 0;
 }
 
+section {
+	padding: 15vh 0;
+}
+
+#contact-form {
+	height: 300px;
+	width: 300px;
+}
+
 .first {
 	margin-left: 0;
 }
@@ -195,6 +204,15 @@ section {
 .about-image img {
 	width: 100%;
 }
+.about-image {
+	max-width: 650px;
+}
+#about .section-text {
+	float: left;
+	width: 40%;
+	margin-right: 4%;
+	margin-top: 0;
+}
 
 /*GENERAL */
 
@@ -266,7 +284,6 @@ section {
 }
 
 .tools-n-skills {
-	background-color: #1D1E20;
 	text-align: center;
 	color: white;
 }
@@ -329,7 +346,7 @@ div#people {
 	font-size: 24px;
 }*/
 section#call-to-action {
-	background-color: white;
+	background-color: #1D1E20;
 	/*padding-top: 200px;*/
 }
 section#call-to-action h2 {
@@ -432,6 +449,11 @@ div.main-container {
 		width: 65%;
 	}
 
+	.about-image {
+		float: right;
+		width: 55%;
+	}
+
 	.project-image img {
 
 	}
@@ -468,7 +490,7 @@ div.main-container {
 	}
 
 	.phone .project-image {
-		width: 30%;
+		width: 25%;
 	}
 
 	.phone .section-text {
